@@ -1,0 +1,127 @@
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: grid;
+    align-items: center;
+    background-color: #15a47b;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.title {
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+.content {
+    display: flex;
+    margin: 82px auto 32px;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    margin: 0.5rem;
+    font-family: sans-serif;
+}
+
+.containerCodigo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.containerCodigo :hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+}
+
+input::placeholder {
+    color: #c0c0c0;
+}
+
+.cardCodigo {
+    border-radius: 4px;
+    border: 1px solid #eee;
+    background-color: #fafafa;
+    height: 5px;
+    width: 250px;
+    margin: 0 8px 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    line-height: 24px;
+}
+
+.containerButton {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.containerButton :hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+}
+
+.cardButton {
+    border-radius: 10px;
+    border: 1px solid #eee;
+    background-color: #fafafa;
+    height: 30px;
+    width: 150px;
+    margin: 0 8px 16px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.notFound {
+    margin-top: 2rem;
+    font-family: sans-serif;
+    font-size: 2rem;
+}
+
+.table {
+    border-radius: 5px;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: #f8f8f8;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.titleTable, .titleContent {
+    text-align: center;
+    padding: 8px;
+}
+
+.titleContent {
+    border-right: 1px solid #f8f8f8;
+    font-size: 1rem;
+}
+
+.titleTable {
+    width: 6rem;
+    font-style: normal;
+    color: #ffffff;
+    background: #15a47b;
+}

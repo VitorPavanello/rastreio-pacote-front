@@ -1,0 +1,47 @@
+<!-- Toolbar -->
+<div class="toolbar">
+  <span class="title">Rastreamento de encomendas.</span>
+</div>
+
+<div class="content">
+
+  <!-- Resources -->
+  <h2>Digite seu código abaixo:</h2>
+
+  <div class="containerCodigo">
+    <input (keyup)="onKey($event)" type="text" class="cardCodigo" placeholder="AA123456789BR">
+  </div>
+  <div class="containerButton">
+    <button class="cardButton" (click)="rastrearPacote()">RASTREAR</button>
+  </div>
+
+
+  <div class="notFound" *ngIf="notFound">
+    <label >O código não foi localizado.</label>
+  </div>
+
+  <div class="container">
+    <div class="card m-5 p-3">
+      <div class="card-body">
+        <table class="table" *ngFor="let rastreio of rastreios">
+          <thead>
+            <tr>
+              <td class="titleTable">Local</td>
+              <td class="titleContent">{{ rastreio.source }}</td>
+            </tr>
+            <tr>
+              <td class="titleTable">Data</td>
+              <td class="titleContent">{{ rastreio.date }}</td>
+            </tr>
+            <tr>
+              <td class="titleTable">Status</td>
+              <td class="titleContent">{{ rastreio.status }}</td>
+            </tr>
+          </thead>
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+</div>
